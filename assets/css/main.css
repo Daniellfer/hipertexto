@@ -1622,7 +1622,12 @@
 	}
 
 	body {
-		background: #ffffff;
+		background-attachment: fixed;
+		background-image: url("images/intro_Images/intro_ImgID1.png");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1684,6 +1689,19 @@
 		text-decoration: none;
 		border-bottom: 0;
 	}
+	a.enlaces {
+		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		border-bottom: dotted 1px rgba(35, 48, 227, 0.35);
+		color: #113b83;
+		text-decoration: none;
+	}
+	a.enlaces:hover {
+			border-bottom-color: transparent;
+			color: #01052E;
+		}
 
 		a:hover {
 			border-bottom-color: transparent;
@@ -1704,7 +1722,8 @@
 	}
 
 	p.pgeneric{
-		color: 113b83;
+		color: #113b83;
+		text-align: justify;
 
 	}
 	h1, h2, h3, h4, h5, h6 {
@@ -1902,6 +1921,40 @@
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
 		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.6em;
+		font-weight: bold;
+		height: calc(4.75em + 2px);
+		letter-spacing: 0.25em;
+		line-height: 4.75em;
+		outline: 0;
+		padding: 0 3.75em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.buttonwh {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: border-color 0.2s ease;
+		-webkit-transition: border-color 0.2s ease;
+		-ms-transition: border-color 0.2s ease;
+		transition: border-color 0.2s ease;
+		background-color: transparent;
+		border: solid 1px !important;
+		border-color: rgba(6, 11, 96, 0.13) !important;
+		border-radius: 3em;
+		color: #113b83 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -3267,19 +3320,28 @@
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #113b83;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #ffffff;
 		}
+
+		.wrapper.style2 h2{
+			color: #113b83;
+		}
+
+		.wrapper.style2 p{
+			color: #113b83;
+		}
+
 
 		.wrapper.style2-alt {
 			background-color: #3e4094;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #113b83;
 		}
 
 		.wrapper.style3-alt {
